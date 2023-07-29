@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xul Version="1.0">
+	<script type="text/javascript" src="script.js"/>
+	<script type="text/javascript" src="functions.js"/>
+	<window type="widget" height="700" width="984" onLoad="widgetOnLoad" swimKeepOnScreen="true" onClose="widgetOnClose" autoSaveWindowSize="true" onEnter="widgetOnEnter" onLeave="widgetOnLeave">
+		<layer name="about" width="338" height="350" left="5" top="14" locked="true" showInDefaultImage="false" visible="false">
+			<text name="version" width="74" height="16" left="139" top="119" font.family="Arial" text="Version 1.0.1" font.antiAlias="true" locked="true" showInDefaultImage="false" autoSize="true" font.style="Bold"/>
+			<image name="aboutUsImage" width="346" height="363" onClick="aboutUsImageOnClick" left="7" top="11" locked="true" src="volumePlaque.png"/>
+		</layer>
+		<image name="helpImage" left="-25" top="-6" width="750" height="284" src="media-player-help.png" onClick="helpImageOnClick" visible="false"/>
+		<layer name="showWidgetPreferences" width="403" height="621" showInDefaultImage="false" top="42" allowDrag="false" canFocused="true" left="6" locked="true" visible="false">
+			<text name="txtKey" width="66" height="16" font.family="Times New Roman" left="238" top="516" wordWrap="true" font.antiAlias="false" text="Key" locked="true"/>
+			<text name="txtHideTime" width="93" height="16" font.family="Times New Roman" left="29" top="514" wordWrap="true" locked="true" font.antiAlias="false" text="Mins to Hide:"/>
+			<text name="text17" left="99" top="36" width="251" height="32" font.family="Times New Roman" font.style="Bold,Italic" cursor="-21" font.size="12" onClick="linkOnClick" showInDefaultImage="false" link="https://www.deviantart.com/yereverluvinuncleber/art/XWIDGET-Version-1-0-0-Dieselpunk-Volume-XWidget-761692195" wordWrap="true" hAlign="0" vAlign="0" text="Desktop widgets using the XWidget and Yahoo widget engines"/>
+			<text name="text13" width="157" height="24" left="34" top="14" font.family="Times New Roman" font.size="12" font.fill.color="251,251,251,255" font.style="Bold,Italic" text="DieselPunk Volume Widget"/>
+			<text name="text16" width="244" height="20" font.family="Times New Roman" left="125" top="486" wordWrap="true" text="Leave this empty and the widget will position itself" font.antiAlias="false"/>
+			<text name="text15" width="249" height="16" font.family="Times New Roman" left="124" top="434" wordWrap="true" text="Leave this empty and the widget will position itself" font.antiAlias="false"/>
+			<text name="text14" width="93" height="16" font.family="Times New Roman" left="25" top="457" wordWrap="true" text="Voffset/Top Y pos" locked="true" font.antiAlias="false"/>
+			<text name="text12" width="82" height="16" font.family="Times New Roman" top="293" wordWrap="true" text="Widget Tooltip :" left="36" font.antiAlias="false"/>
+			<text name="text11" width="98" height="16" font.family="Times New Roman" top="229" wordWrap="true" text="Widget Command:" left="29" font.antiAlias="false"/>
+			<text name="text10" width="93" height="16" font.family="Times New Roman" left="24" top="408" wordWrap="true" text="Hoffset/Left X pos" locked="true" font.antiAlias="false"/>
+			<text name="text8" width="251" height="36" font.family="Times New Roman" left="126" top="320" wordWrap="true" locked="true" text="You can change the displayed tooltip at any time to correspond to the name of the function you have assigned." font.antiAlias="false"/>
+			<text name="text7" width="251" height="36" font.family="Times New Roman" left="126" top="253" wordWrap="true" locked="true" text="Double-clicking on the widget image will run this command. An example command might be: control mmsys.cpl sounds" font.antiAlias="false"/>
+			<text name="text6" width="251" height="36" font.family="Times New Roman" left="127" top="192" wordWrap="true" text="Changes the total size of the widget. Vary the percentage and the whole widget will alter in size." font.antiAlias="false"/>
+			<text name="text5" width="84" height="16" font.family="Times New Roman" top="173" wordWrap="true" text="Widget Size:" left="48" font.antiAlias="false"/>
+			<text name="text4" width="251" height="36" font.family="Times New Roman" left="125" top="129" text="This widget makes sounds by default - you can enable or disable these sounds as you require." wordWrap="true" locked="true" font.antiAlias="false"/>
+			<text name="text3" width="84" height="16" font.family="Times New Roman" top="107" wordWrap="true" text="Sound Control:" left="44" font.antiAlias="false"/>
+			<layer name="tooltipLayer" width="191" top="353">
+				<text name="ScrollWheelText" width="51" height="34" font.family="Times New Roman" font.fill.color="30,29,29,255" text="Tooltip Control :" font.antiAlias="false" left="61" top="12" wordWrap="true" background.solidColor.color="183,163,135,255" locked="true"/>
+				<edit name="preferencesHintsPrefValue" width="50" height="26" top="12" readOnly="true" font.family="Times New Roman" left="144" font.antiAlias="false" text="disabled"/>
+				<button name="tooltipButton" width="33" height="32" left="111" top="9" srcUp="button.png" srcHot="buttonpushed.png" srcDown="buttonpushed.png" clickSound="buzzer.wav" showHint="true" locked="true" hint="Tooltip enabled/disabled here" onMouseDown="tooltipButtonOnMouseDown"/>
+			</layer>
+			<layer name="ScrollControlLayer" width="191" left="182" top="353">
+				<text name="ScrollWheelText" width="45" height="29" autoSize="true" font.family="Times New Roman" font.fill.color="30,29,29,255" text="Scroll Wheel :" font.antiAlias="false" left="66" top="10" wordWrap="true"/>
+				<edit name="preferencesMouseWheelPrefValue" width="45" height="26" text="right" top="11" readOnly="true" font.family="Times New Roman" left="144" locked="true" font.antiAlias="false"/>
+				<button name="button5" width="33" height="32" left="111" top="9" srcUp="button.png" srcHot="buttonpushed.png" srcDown="buttonpushed.png" clickSound="buzzer.wav" onMouseDown="button5OnMouseDown" showHint="true" hint="The scroll wheel direction decided here." locked="true"/>
+			</layer>
+			<layer name="forcePositionLayer" width="165" height="36" showInDefaultImage="false" left="36" top="557">
+				<text name="forcePositionText" width="92" height="15" top="9" font.family="Times New Roman" font.antiAlias="false" showInDefaultImage="false" text="Force Layer to Top" left="31" locked="true"/>
+				<button name="forcePositionButton" width="33" height="32" showHint="true" locked="true" onMouseDown="togglePositionButtonOnMouseDown" hint="Sometimes Xwidgets fail to layer correctly, this forces the layer position to normal" srcUp="button.png" srcHot="buttonpushed.png" srcDown="buttonpushed.png" left="-4" top="-1"/>
+				<edit name="preferencesForceNormalPosition" showInDefaultImage="false" width="48" left="124" readOnly="true" text="enabled" font.family="Times New Roman" height="28" font.antiAlias="false" locked="true" top="2"/>
+			</layer>
+			<layer name="hiddenPrefs" top="7">
+				<edit name="preferencesLicenceHideValue" top="28" visible="false" text="0"/>
+			</layer>
+			<text name="text2" left="164" top="108" width="64" height="14" font.family="Times New Roman" font.antiAlias="false" text="is currently" showInDefaultImage="false" locked="true"/>
+			<image name="soundbutton" width="33" height="32" src="button.png" left="126" top="96" onMouseDown="soundbuttonOnMouseDown" onMouseUp="soundbuttonOnMouseUp" locked="true" showInDefaultImage="false" hint="Click here to enable/disable sound" showHint="true"/>
+			<text name="preferencessoundprefvalue" left="221" top="108" height="14" font.family="Times New Roman" font.antiAlias="false" text="enabled" showInDefaultImage="false" locked="true"/>
+			<edit name="widgetSize" left="70" top="195" width="39" readOnly="true" showInDefaultImage="false" font.family="Times New Roman"/>
+			<progressBar name="preferencessizePrefvalue" width="246" height="9" back.draw.solidColor.enabled="true" fore.draw.solidColor.enabled="true" fore.draw.solidColor.color="119,97,66,255" left="123" top="175" readOnly="false" thumb.enabled="true" thumb.offset.y="-4" cursor="-21" back.draw.gradient.direction="1" thumb.src="slidersmall.png" clickSound="zzzz.wav" back.draw.pattern.style="50" back.draw.pattern.color="183,177,177,255" back.draw.pattern.enabled="true" border.color="134,133,133,255" corner.xRadius="5" corner.yRadius="5" showInDefaultImage="false" locked="true" back.draw.solidColor.color="195,178,155,255" showHint="true" onChange="preferencessizePrefvalueOnChange"/>
+			<text name="Widgetdefaults" left="288" top="566" width="73" height="15" font.family="Times New Roman" link="http://lightquick.co.uk/steampunk-widgets.html?Itemid=264" cursor="-21" text="Widget defaults" showInDefaultImage="false" font.antiAlias="false" locked="true"/>
+			<text name="link" left="84" top="62" width="300" height="32" font.family="Times New Roman" font.style="Bold,Italic" cursor="-21" onClick="linkOnClick" showInDefaultImage="false" link="https://www.deviantart.com/yereverluvinuncleber/art/XWIDGET-Version-1-0-0-Dieselpunk-Volume-XWidget-761692195" text="Click here to view some of the other Xwidgets on DeviantArt" wordWrap="true" hAlign="0" vAlign="0"/>
+			<button name="defaultbutton" height="32" left="248" top="557" showInDefaultImage="false" clickSound="buzzer.wav" srcUp="button.png" srcHot="buttonpushed.png" srcDown="buttonpushed.png" showHint="true" hint="Apply default preference values" onClick="defaultbuttonOnClick" width="33"/>
+			<button name="saveButton" width="69" height="22" left="242" top="599" onClick="saveButtonOnClick" showInDefaultImage="false" clickSound="ting.wav" showHint="true" hint="Save and exit the preferences screen" text.font.family="Times New Roman" text.font.antiAlias="false" locked="true"/>
+			<edit name="preferencesvoffsetprefvalue" width="251" height="25" top="453" left="122" showInDefaultImage="false" font.family="Times New Roman" autoSave="true" locked="true"/>
+			<edit name="preferenceshoffsetprefvalue" width="253" height="25" top="406" left="121" showInDefaultImage="false" font.family="Times New Roman" autoSave="true" locked="true"/>
+			<edit name="preferenceswidgetTooltipvalue" width="252" height="25" top="292" left="122" showInDefaultImage="false" font.family="Times New Roman" locked="true"/>
+			<button name="button3" width="22" height="20" left="363" top="14" showInDefaultImage="false" onClick="button2OnClick"/>
+			<button name="button2" width="72" height="21" left="310" top="599" onClick="button2OnClick" showInDefaultImage="false" hint="Close the preferences screen" showHint="true" locked="true"/>
+			<edit name="preferencesimageCmdPrefvalue" width="252" height="23" top="226" left="122" locked="true" showInDefaultImage="false" font.family="Times New Roman" autoSave="true"/>
+			<edit name="prefsHideTime" width="77" height="25" showInDefaultImage="false" font.family="Times New Roman" autoSave="true" top="514" left="124" locked="true" text="20"/>
+			<edit name="prefsHideKey" width="77" height="25" showInDefaultImage="false" font.family="Times New Roman" autoSave="true" top="513" left="297" locked="true" text="F10"/>
+			<image name="background" left="17" top="10" width="383" height="700" effect.shadow.opacity=".99" effect.shadow.distance="14" effect.shadow.direction="85" effect.blur.softness="0" hAlign="1" vAlign="1" showInDefaultImage="false" locked="true" src="preferences.png"/>
+		</layer>
+		<layer name="Licence" left="2" top="136" width="357" height="315" showInDefaultImage="false" visible="false">
+			<button name="button4" left="229" top="257" width="46" height="20" text="Decline" text.font.fill.color="245,245,245,255" locked="true" onMouseDown="button4OnMouseDown" text.font.family="Times New Roman"/>
+			<button name="button1" left="282" top="257" width="52" height="20" text="Accept" text.font.fill.color="253,253,253,255" locked="true" onMouseDown="button1OnMouseDown" text.font.family="Times New Roman"/>
+			<memo name="memo1" width="307" height="228" left="23" top="12" text="A Steampunk Volume Control Widget
+Copyright © 2012 Dean Beedell and Harry Whitfield
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+" allowDrag="false" opacity=".32" locked="true" font.family="@Arial Unicode MS" font.antiAlias="true"/>
+			<image name="image2" width="355" height="310" src="Frame.png" left="-5" top="-7"/>
+		</layer>
+		<layer name="volumeDevice" width="370" height="159" core="shortcutcore1" coreFormat="%Icon" onMouseWheelUp="sliderSetOnMouseWheelUp" onMouseWheelDown="sliderSetOnMouseWheelDown" onMouseUp="sliderSetOnMouseUp">
+			<image name="lockAreaFree" width="23" height="78" left="69" onMouseDown="lockAreaOnMouseDown" cursor="-21" onMouseEnter="lockAreaFreeOnMouseEnter" onMouseLeave="lockAreaFreeOnMouseLeave" src="lockAreaFree.png" top="29" locked="true"/>
+			<image name="lockAreaLocked" left="65" top="16" width="25" height="36" src="lockAreaLocked.png" onMouseDown="lockAreaOnMouseDown" visible="false" locked="true"/>
+			<image name="sliderSet" width="85" height="84" left="127" top="60" onMouseDown="sliderSetOnMouseDown" onMouseMove="sliderSetOnMouseMove" onMouseUp="sliderSetOnMouseUp" src="sliderSet.png" autoSize="true" cursor="-21" hint="slide me to change system sound levels..." onMouseLeave="sliderSetOnMouseLeave" tooltipPanelOffsetY="140" onMouseEnter="sliderSetOnMouseEnter" allowDrag="false" locked="true"/>
+			<text name="text1" left="92" top="31" height="16" font.fill.color="255,255,255,255" coreFormat="%Volume%" font.family="Times New Roman" font.size="13" font.style="Bold" effect.shadow.enabled="True" effect.shadow.distance="1" effect.shadow.softness=".2" effect.shadow.opacity=".66" width="54" core="systemvolume" text="0%" showInDefaultImage="false" locked="true"/>
+			<button name="bell" width="33" height="32" srcUp="bell.png" srcDown="bellpushed.png" srcHot="bell.png" left="267" top="69" onMouseDown="button1OnMouseDown" onMouseUp="bellOnMouseUp" locked="true" hint="Click me to mute system sound"/>
+			<image name="bar" width="230" height="29" src="bar.png" left="35" top="77" onDblClick="barOnDblClick" locked="true"/>
+			<image name="indicatorRed" width="25" height="25" src="indicatorRed.png" left="306" top="73" locked="true" coreFormat="indicator%IsMute.png" core="systemvolume"/>
+			<image name="speaker" width="100" height="79" left="249" onDblClick="speakerOnDblClick" core="shortcutlistcore1" acceptFileDragDrop="true" showHint="true" src="speaker.png" locked="true"/>
+			<image name="cable" width="130" height="16" left="200" top="110" src="cable.png" locked="true"/>
+			<image name="pipesEnd" width="39" height="78" link="control mmsys.cpl sounds" onDblClick="pipesOnDblClick" autoSize="true" onMouseDown="widgetOnClose" onMouseUp="widgetOnClose" left="10" src="pipes-end.png" top="25" locked="true"/>
+			<image name="pipes" width="205" height="80" left="49" top="48" link="control mmsys.cpl sounds" onDblClick="pipesOnDblClick" autoSize="true" onMouseDown="widgetOnClose" onMouseUp="widgetOnClose" locked="true" src="pipes.png"/>
+			<image name="pipesRight" left="250" width="100" height="86" src="pipes-right.png" top="28" locked="true"/>
+			<image name="cableWheelSet" width="37" height="105" left="291" top="38" autoSize="true" src="cableWheelSet.png" locked="true"/>
+			<image name="helpLug" width="21" height="21" link="control mmsys.cpl sounds" autoSize="true" left="223" top="30" locked="true" onMouseDown="helpLugOnMouseDown" cursor="-20" onMouseEnter="helpLugOnMouseEnter" onMouseLeave="helpLugOnMouseLeave" src="helpLug.png"/>
+		</layer>
+	</window>
+	<menu>
+		<item name="menuitem9" caption="About Dieselpunk Volume Control" onClick="menuitem9OnClick"/>
+		<item name="menuitem8" caption="Widget Preferences" onClick="menuitem8OnClick"/>
+		<item name="menuitem10" caption=" "/>
+		<item name="menuitem2" caption="Donate a Coffee with Ko-Fi" onClick="menuitem2OnClick"/>
+		<item name="menuitem11" caption=" "/>
+		<item name="menuitem17" caption="Dieselpunk Volume Slider Help" onClick="helpLugOnMouseDown"/>
+		<item name="menuitem18" caption="Online Help and other online options">
+			<item name="menuitem5" caption="See More Dieselpunk Widgets" onClick="menuitem5OnClick"/>
+			<item name="menuitem6" caption="Download Latest Version" onClick="menuitem6OnClick"/>
+			<item name="menuitem7" caption="Contact Support" onClick="menuitem7OnClick"/>
+			<item name="menuitem15" caption="Chat about Dieselpunk Widgets on Facebook" onClick="menuitem15OnClick"/>
+		</item>
+		<item name="menuitem14" caption="Display Licence Agreement" onClick="menuitem14OnClick"/>
+		<item name="menuitem16" caption=" "/>
+		<item name="mnuEdit" caption="Edit Widget using " onClick="mnuEditOnClick" visible="false"/>
+		<item name="menuitem1" caption="Reveal Widget in Windows Explorer" onClick="findWidget"/>
+		<item name="menuitem13" caption="Reload Widget (F5)" onClick="menuitem13OnClick"/>
+	</menu>
+	<cores>
+		<volumeCore name="systemvolume" onUpdate="checkTimerOnUpdate" interval="300"/>
+		<timerCore name="keytimer" onUpdate="keytimerOnUpdate" interval="100"/>
+		<timerCore name="hideTimer" onUpdate="hideTimerOnUpdate" interval="600000"/>
+		<timerCore name="keyF12Timer" onUpdate="keyFTimerOnUpdate" interval="100"/>
+	</cores>
+	<hotspots/>
+</xul>

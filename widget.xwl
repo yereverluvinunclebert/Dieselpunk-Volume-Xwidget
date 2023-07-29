@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xwidget version="1.0">
+	<info>
+		<name>Steampunk Volume Xwidget</name>
+		<namespace/>
+		<displayName>Dieselpunk Volume</displayName>
+		<version>1.0.1</version>
+		<authorName>Dean Beedell</authorName>
+		<description>You can control the volume level of your PC/Mac desktop by 
+moving the slider or clicking on the mute button. Double-clicking 
+on the widget will cause a personalised Windows/Mac application 
+to fire up. The first time you run it there will be no assigned 
+function and so it will state as such - then it will pop up the 
+preferences so that you can enter the command of your choice. 
+The widget takes command line-style commands for windows or 
+Mac OS/X.</description>
+		<permissions/>
+		<CloseBoxInsetX>22</CloseBoxInsetX>
+		<CloseBoxInsetY>21</CloseBoxInsetY>
+		<Width>984</Width>
+		<Height>700</Height>
+		<minPlatformVersion>0.1</minPlatformVersion>
+		<uiType>xul</uiType>
+		<mainSrc>main.xul</mainSrc>
+		<guid/>
+		<updateLog>Added CTRL+mousewheel resizing, menu reloading, updated help. Fixed menus, recreated the preferences, added tooltip options and fixed various bugs.</updateLog>
+		<category>5</category>
+		<authorContact>https://www.deviantart.com/yereverluvinuncleber/gallery/59981273/xwidgets</authorContact>
+		<portAuthorName/>
+		<portAuthorContact/>
+		<tag/>
+		<enabledCloseBox>false</enabledCloseBox>
+		<platform>0</platform>
+	</info>
+</xwidget>
