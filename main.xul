@@ -108,7 +108,7 @@ You should have received a copy of the GNU General Public License along with thi
 		</item>
 		<item name="menuitem14" caption="Display Licence Agreement" onClick="menuitem14OnClick"/>
 		<item name="menuitem16" caption=" "/>
-		<item name="mnuEdit" caption="Edit Widget using " onClick="mnuEditOnClick" visible="false"/>
+		<item name="mnuEdit" caption="Edit Widget using" onClick="mnuEditOnClick" visible="false"/>
 		<item name="menuitem1" caption="Reveal Widget in Windows Explorer" onClick="findWidget"/>
 		<item name="menuitem13" caption="Reload Widget (F5)" onClick="menuitem13OnClick"/>
 	</menu>
