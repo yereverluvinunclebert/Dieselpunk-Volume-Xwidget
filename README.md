@@ -90,7 +90,7 @@ With regard to the commercial use of incorporated images, permission and a
 licence would need to be obtained from the original owner and creator, ie. me.
 
 ![desktop](https://github.com/yereverluvinunclebert/Dieselpunk-Volume-Xwidget/assets/2788342/21bee568-4c2f-4dc4-bb17-78a6bc805052)
-Volume widghet (top right)
+Volume widget (top right)
 
 
  
