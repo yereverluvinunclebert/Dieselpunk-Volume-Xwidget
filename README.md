@@ -2,7 +2,7 @@
 
 Panzer Volume Control Widget, written in Jscript for the XWidget Engine. Created for XP, Vista, Win7, 8, 10/11+, ReactOS and Mac os/x - Linux with Wine.
 
-![diesel-volume](https://github.com/yereverluvinunclebert/Dieselpunk-Volume-Xwidget/assets/2788342/4458534d-b973-4364-9337-cc6470781eea)
+![diesel-volume-help](https://github.com/yereverluvinunclebert/Dieselpunk-Volume-Xwidget/assets/2788342/a3fa07d9-4293-4609-9fa7-7a2e6ccf4801)
 
 A Dieselpunk Volume Control widget. - I created for the World of Tanks and War Thunder communities. This Panzer widget is a simple Volume Control. Functional and gorgeous at the same time. The graphics are my own, I took original inspiration from a clock face by Italo Fortana. 
 
