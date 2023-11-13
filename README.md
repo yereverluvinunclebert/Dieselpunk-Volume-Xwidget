@@ -1,16 +1,10 @@
 # Dieselpunk-Volume-Xwidget
 
-Panzer Volume Control Widget, written in Jscript for the XWidget Engine. Created for XP, Vista, Win7, 8, 10/11+, ReactOS and Mac os/x - Linux with Wine.
+A Dieselpunk Volume Control widget, written in Jscript for the XWidget Engine. Created for XP, Vista, Win7, 8, 10/11+, ReactOS and Mac os/x - Linux with Wine.
 
 ![diesel-volume-help](https://github.com/yereverluvinunclebert/Dieselpunk-Volume-Xwidget/assets/2788342/a3fa07d9-4293-4609-9fa7-7a2e6ccf4801)
 
-A Dieselpunk Volume Control widget. - I created for the World of Tanks and War Thunder communities. This Panzer widget is a simple Volume Control. Functional and gorgeous at the same time. The graphics are my own, I took original inspiration from a clock face by Italo Fortana. 
-
-I took the screenshot photo. It looks like 1944 but it was 2004! The image above 
-was shot at Beltring in Kent. I've had to do some serious photoshopping to 
-remove any traces of modernity. There were lots. Addition of some grain, 
-desaturation and addition of some light brown to give it a hint of old picture. 
-I don't want it to look too old as it loses some of the immediacy.
+I created this to be compatible with the Panzer gauges I created for the World of Tanks and War Thunder communities. This dieselpunk widget is a simple Volume Control. Functional and gorgeous at the same time. The graphics are my own, my own original inspiration. 
 
 The widget can be resized - Hover the cursor over the widget. Press the CTRL key 
 and use your mousewheel up or down. The widget will resize dynamically.
@@ -23,8 +17,7 @@ All javascript widgets need an engine to function, in this case the widget uses 
 
 ![diesel-volume-icon](https://github.com/yereverluvinunclebert/Dieselpunk-Volume-Xwidget/assets/2788342/e0e0a8d6-4000-42a3-9777-219a62dfa1f3)
 
-This is based on the similar Yahoo widget implementation. The graphic interface and operation of the two types of widgets are the same. The only differences are the configuration preference utility (this has a cut-down 
-version), the language is Micrososoft's JScript (rather than javascript) and of course, it is the Xwidget engine that is utilised to put the widget on your screen.
+This is based on the older and similar Steampunk Yahoo widget implementation. The graphic interface and operation of the two types of widgets are similar. The only differences are the configuration preference utility (this has a cut-down version), the language is Micrososoft's JScript (rather than javascript) and of course, it is the Xwidget engine that is utilised to put the widget on your screen.
 
 ![xwidget-title2](https://github.com/yereverluvinunclebert/Panzer-Tank-CPU-Gauge-Xwidget/assets/2788342/a9d58973-347f-4f93-ba1f-4b538f743515)
 
