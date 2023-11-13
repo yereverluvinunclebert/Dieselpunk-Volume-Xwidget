@@ -1,6 +1,6 @@
 # Dieselpunk-Volume-Xwidget
 
-Panzer Volume Control Widget, written in Jscript for the XWidget Engine. Created for XP, Vista, Win7, 8, 10+.
+Panzer Volume Control Widget, written in Jscript for the XWidget Engine. Created for XP, Vista, Win7, 8, 10/11+, ReactOS and Mac os/x - Linux with Wine.
 
 ![diesel-volume](https://github.com/yereverluvinunclebert/Dieselpunk-Volume-Xwidget/assets/2788342/4458534d-b973-4364-9337-cc6470781eea)
 
@@ -28,10 +28,6 @@ version), the language is Micrososoft's JScript (rather than javascript) and of 
 
 ![xwidget-title2](https://github.com/yereverluvinunclebert/Panzer-Tank-CPU-Gauge-Xwidget/assets/2788342/a9d58973-347f-4f93-ba1f-4b538f743515)
 
-This widget is uploaded here for historical archival reasons. I suggest that you 
-use the Yahoo widget version as it is a superior engine for developing widgets. 
-I will provide bugfixes for the Yahoo widget version but NOT for Xwidgets.
-
 All Jscript widgets need an engine to function, in this case the widget uses 
 the XWidget engine. The engine interprets the Jscript and creates the widget 
 according to the XML description and using the images you provide. 
@@ -58,12 +54,7 @@ Tested on :
 	
 Dependencies:
 
-o A windows-alike o/s such as Windows XP, 7-11 or Apple Mac OSX 11.   
-
-o You must have Open Hardware Monitor installed and running for this widget to 
-operate. 
-   
-  https://openhardwaremonitor.org/downloads/   	
+o A windows-alike o/s such as Windows XP, 7-11, ReactOS or Apple Mac OSX 11 with Wine.   
 
 o Installation of the XWidget runtime engine  
 
