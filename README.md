@@ -2,6 +2,8 @@
 
 A Dieselpunk Volume Control widget, written in Jscript for the XWidget Engine. Created for XP, Vista, Win7, 8, 10/11+, ReactOS and Mac os/x - Linux with Wine.
 
+This widget is now deprecated and is retained for historical reasons only, it still works but time moves ever onward - please use the VB6 version instead that you will find here: https://github.com/yereverluvinunclebert/Diesel-Volume-Control-VB6
+
 ![diesel-volume-help](https://github.com/yereverluvinunclebert/Dieselpunk-Volume-Xwidget/assets/2788342/a3fa07d9-4293-4609-9fa7-7a2e6ccf4801)
 
 I created this to be compatible with the Panzer gauges I created for the World of Tanks and War Thunder communities. This dieselpunk widget is a simple Volume Control. Functional and gorgeous at the same time. The graphics are my own, my own original inspiration. 
